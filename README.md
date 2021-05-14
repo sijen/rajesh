@@ -1,5 +1,5 @@
-# guide to open file 
+# GUIDE TO FOLLOW 
 open folder and double click index.html
 
-## demo of the project
+## DEMO OF THE PROJECT
 https://sijen.github.io/rajesh
