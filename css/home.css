@@ -32,6 +32,10 @@ nav a {
   height: 48px;
   display: block;
 }
+a{
+  color: white;
+}
+
  /* navigation bar styles */
 
 .scroll {
@@ -315,4 +319,16 @@ margin: auto;
 .skill-bar-percentage{
   right:10px;
   font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .three {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 60px;
+    margin: auto;
+    width: max-content;
+}
+.element{
+  grid-template-columns: auto;
+}
 }
