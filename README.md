@@ -1,6 +1,9 @@
 # GUIDE TO FOLLOW 
-1 clone it or download it<br/>
-2 open folder and double click index.html
+<ol>
+  <li>clone it or download it</li>
+  <li>open folder and double click index.html</li>
+</ol>
+
 
 ## DEMO OF THE PROJECT
 https://sijen.github.io/rajesh
