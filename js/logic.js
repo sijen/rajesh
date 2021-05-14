@@ -12,19 +12,43 @@ $(document).ready(function(){
     // to display image in large form
     var bigImg = true;
     $(".image").on({
-      
       click : function (){
-      var n = $(".image").index( this );
-      if(bigImg == true){
-        $(".element").eq(n).css("grid-template-columns","auto")
-        n = null
+        let n = $(".image").index( this );
+      console.log("number :"+n)
+      if(bigImg === true){
+        $(".image").eq(n).addClass("makebig")
+        $(".image").eq(n).removeClass("img")
       }
       else{
-        $(".element").eq(n).css("grid-template-columns","auto auto")
-        n = null
+        $(".image").eq(n).removeClass("makebig")
+        $(".image").eq(n).addClass("img")
       }
       bigImg = !bigImg;
     },
     hover : $(".image").css("cursor","pointer")
-    })
+    });
+
+    $(".zoomImg").on({
+      click : function (){
+        let n = $(".zoomImg").index( this );
+      console.log("number :"+n)
+        $(".thisImg").eq(n).addClass("zoom")
+        $(".three").children().eq(n).removeClass("el1-img")
+    },
+    hover : $(".thisImg").css("cursor","pointer")
+    });
+    $(".thisImg").on({
+      click : function (){
+        let n = $(".thisImg").index( this );
+      console.log("number :"+n)
+        $(".thisImg").eq(n).removeClass("zoom")
+        $(".three").children().eq(n).addClass("el1-img")
+    },
+    hover : $(".thisImg").css("cursor","pointer")
+    });
 })
+
+// else{
+//   $(".thisImg").eq(n).removeClass("zoom")
+//   $(".el1-img").eq(n).addClass("el1-img")
+// }

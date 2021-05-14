@@ -121,12 +121,13 @@ nav div a:active {
   padding: 10px;
 }
 .element {
+  position: relative;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 20px;
   padding: 50px;
 }
-.element > img {
+.img {
   height: 100%;
   width: 100%;
   box-shadow: 2px 2px 5px rgb(95, 95, 95);
@@ -198,8 +199,19 @@ nav div a:active {
   transform: rotate(1deg);
 }
 
+.makebig{
+  position: absolute;
+  top:0px;
+  left:0px; 
+  height:max-content;
+  width: 100%;
+  z-index: 1;
+}
+.element > h2{
+  border-right: 4px solid rgb(26, 25, 25);
+}
 /* css for mywork.html */
-.elementm1 {
+.three {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 60px;
@@ -213,15 +225,12 @@ nav div a:active {
   text-align: center;
   margin-top: 2px;
 }
-.el1-img > img {
+.thisImg{
   width: 100%;
   height: 100%;
 }
 .el1-img > h2 {
   margin: 0px;
-}
-.el1-img > span {
-  font-size: 12px;
 }
 .back_details {
   position: absolute;
@@ -247,4 +256,16 @@ nav div a:active {
 }
 .el1-img:hover .back_details {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.zoom{
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  z-index:1;
+  border: 10px solid #e96c00;
+}
+.zoom::after{
+  content: "";
 }
