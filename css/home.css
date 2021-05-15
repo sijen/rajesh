@@ -96,7 +96,7 @@ a{
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  background-image: url("photos/profile1.JPG");
+  background-image: url("../photos/profile1.JPG");
   background-color: rgba(0, 128, 0, 0.205);
   padding: 70px 0px 10px 0px;
 }
