@@ -81,7 +81,7 @@ a{
 .opened:hover {
   color: #e96d00ea;
 }
-.title {
+/* .title {
   position: relative;
   min-height: 655px;
   width: 100%;
@@ -90,6 +90,15 @@ a{
   background-image: url("./photos/profile1.jpg");
   background-color: rgba(0, 128, 0, 0.205);
   padding: 70px 0px 0px 0px;
+} */
+.title {
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: url("photos/profile1.JPG");
+  background-color: rgba(0, 128, 0, 0.205);
+  padding: 70px 0px 10px 0px;
 }
 .title > h1 {
   font-size: 78px;
@@ -169,10 +178,6 @@ a{
   /* to align in center of the screen */
   margin: auto;
 }
-.el3-obj img {
-  height: 400px;
-  width: 400px;
-}
 .el3-obj::after,
 .el3-obj::before {
   content: "";
@@ -211,13 +216,18 @@ a{
 }
 
 .tagline{
-  margin: auto;
 height: auto;
 width: max-content;
 text-transform: uppercase;
 border-top: 5px dotted aliceblue;
 border-bottom: 5px dotted aliceblue;
 border-radius: 10%;
+margin: auto;
+}
+#work{
+  display: block;
+  height: 70px;
+  width: 100%;
 }
 /* css for mywork.html */
 .three {
@@ -321,14 +331,35 @@ margin: auto;
   font-weight: bold;
 }
 @media screen and (max-width: 600px) {
+  .title > h1{
+    font-size: 20px;
+  }
+  .title > h3{
+    width: 60%;
+    font-size: 14px;
+  }
+  .media{
+    padding: 20px;
+  }
+  .scroll{
+    margin: 10px auto;
+  }
+  /*  heading of title section */
   .three {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 60px;
     margin: auto;
     width: max-content;
 }
+/* third section */
 .element{
   grid-template-columns: auto;
 }
+/* all section */
+.el3-obj,
+.el3-obj::after,
+.el3-obj::before{
+  width: 250px;
+height: 350px;
+}
+/* photo of mahadev */
+
 }

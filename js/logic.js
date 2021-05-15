@@ -45,7 +45,6 @@ $(document).ready(function(){
     hover : $(".thisImg").css("cursor","pointer")
     });//end of image zoom
 
-
     //for smooth scroll
     $("a").click(function(event){
       if(this.hash !== ""){
